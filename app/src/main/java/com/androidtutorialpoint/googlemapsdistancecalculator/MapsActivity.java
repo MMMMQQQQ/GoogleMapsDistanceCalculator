@@ -532,7 +532,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
 
-    /*those actions related to the bar tool*/
+     /*those actions related to the bar tool*/
 
     ///////////////////////////////
     //show the options in the button bar, the options are setted in the "menu"
@@ -573,6 +573,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         return super.onOptionsItemSelected(item);
     }
+
 
 
 }

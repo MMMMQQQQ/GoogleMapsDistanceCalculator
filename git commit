@@ -1,0 +1,8 @@
+#initialize git in the folder
+git init
+#add remote repository (this did not work for me)
+git remote add origin https://myusername@bitbucket.org/myusername/myrepo.git
+#...so i changed it later (after some git add and commit commands)
+git remote set-url origin https://myusername@bitbucket.org/myusername/myrepo.git
+#now it worked:
+git push -u origin master

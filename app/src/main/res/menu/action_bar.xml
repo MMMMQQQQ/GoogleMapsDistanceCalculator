@@ -3,13 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
 
-
     <item
         android:id="@+id/action_sharing"
         android:icon="@mipmap/ic_add_contact"
         android:title="@string/action_sharing"
-        app:showAsAction="always" />
-
+        app:showAsAction="never"/>
 
     <item
         android:id="@+id/action_my_contacts"

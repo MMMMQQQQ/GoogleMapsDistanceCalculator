@@ -110,45 +110,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         ///////////////////////
     }
 
-    ///////////////////////////////
-    //show the options in the button bar, the options are setted in the "menu"
-    ////////////////////////
-
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.action_bar, menu);
-        // Action View
-        //MenuItem searchItem = menu.findItem(R.id.action_search);
-        //SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
-        // Configure the search info and add any event listeners
-        //return super.onCreateOptionsMenu(menu);
-        return true;
-
-    }
-
-//////////////////////////
-//the operations of telling which options in the toolbar have been chosen
-///////////////////////////
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.action_sharing:
-                startActivity(new Intent(this, Contact_List.class));
-                return true;
-            case R.id.action_my_contacts:
-                startActivity(new Intent(this, Contact_List.class));
-                return true;
-            case R.id.action_settings:
-                startActivity(new Intent(this, Settings.class));
-                return true;
-            case R.id.action_about:
-                startActivity(new Intent(this, About.class));
-                return true;
-
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 
 ///////////////////////////////////////
 ////define an object of GoogleApiClient to get the values of the altitude and longitude of the user
@@ -568,8 +529,50 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             build_retrofit_and_get_response("bicycling");
         }
 
+    }
 
 
+    /*those actions related to the bar tool*/
+
+    ///////////////////////////////
+    //show the options in the button bar, the options are setted in the "menu"
+    ////////////////////////
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.action_bar, menu);
+        // Action View
+        //MenuItem searchItem = menu.findItem(R.id.action_search);
+        //SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+        // Configure the search info and add any event listeners
+        //return super.onCreateOptionsMenu(menu);
+        return true;
 
     }
+
+//////////////////////////
+//the operations of telling which options in the toolbar have been chosen
+///////////////////////////
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.action_sharing:
+                startActivity(new Intent(this, Contact_List.class));
+                return true;
+            case R.id.action_my_contacts:
+                startActivity(new Intent(this, Contact_List.class));
+                return true;
+            case R.id.action_settings:
+                startActivity(new Intent(this, Settings.class));
+                return true;
+            case R.id.action_about:
+                startActivity(new Intent(this, About.class));
+                return true;
+
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+
 }

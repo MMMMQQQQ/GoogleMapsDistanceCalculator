@@ -39,6 +39,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".About"
+            android:label="@string/title_activity_about_contacts"
+            android:parentActivityName=".MapsActivity">
+            <meta-data
+                android:name="android:support.PARENT_ACTIVITY"
+                android:value=".MapsActivity"/>
+        </activity>
+
     </application>
 
 </manifest>

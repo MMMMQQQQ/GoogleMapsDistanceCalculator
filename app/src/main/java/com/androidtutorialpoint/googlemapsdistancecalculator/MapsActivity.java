@@ -539,7 +539,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     ////////////////////////
 
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.action_bar, menu);
+        getMenuInflater().inflate(R.menu.menu_action_bar, menu);
         // Action View
         //MenuItem searchItem = menu.findItem(R.id.action_search);
         //SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);

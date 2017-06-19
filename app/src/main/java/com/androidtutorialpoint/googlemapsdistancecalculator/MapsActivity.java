@@ -22,6 +22,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.androidtutorialpoint.googlemapsdistancecalculator.POJO.Example;
+import com.androidtutorialpoint.googlemapsdistancecalculator.Yue.App;
+import com.androidtutorialpoint.googlemapsdistancecalculator.Yue.FriendManager;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -557,10 +559,10 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.action_sharing:
-                startActivity(new Intent(this, Contact_List.class));
+                FriendManager.start(MapsActivity.this);
                 return true;
             case R.id.action_my_contacts:
-                startActivity(new Intent(this, Contact_List.class));
+               startActivity(new Intent(this,App.class));
                 return true;
             case R.id.action_settings:
                 startActivity(new Intent(this, Settings.class));

@@ -31,4 +31,30 @@
     <string name="action_add_contact">Add Contact</string>
 
 
+    <!--YUE QIAO-->
+    <!--FriendManage-->
+    <string name="contacts_list">Contacts List</string>
+    <string name="add_buddy">Add Friend</string>
+    <string name="not_allow_empty">Can not be empty</string>
+    <string name="add_friend_self_tip">Can not add yourself as friend</string>
+    <string name="user_not_exsit">This user does not exsit</string>
+    <string name="friend_exsit">This user is already your friend</string>
+    <string name="add_successful">Add friend successfully</string>
+
+
+    <!--Settings-->
+    <string name="personal_info">Personal Information</string>
+    <string name="avatar">Avatar</string>
+    <string name="userId">User Id</string>
+    <string name="name">User Name</string>
+
+    <string name="pwd">Password</string>
+
+    <string name="create_team">Create Team</string>
+    <string name="square">Team</string>
+
+    <string name="App_Window">Window</string>
+
+
+
 </resources>

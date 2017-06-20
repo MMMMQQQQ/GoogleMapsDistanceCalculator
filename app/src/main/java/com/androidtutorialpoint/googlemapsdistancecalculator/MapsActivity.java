@@ -24,6 +24,7 @@ import android.widget.Toast;
 import com.androidtutorialpoint.googlemapsdistancecalculator.POJO.Example;
 import com.androidtutorialpoint.googlemapsdistancecalculator.Yue.App;
 import com.androidtutorialpoint.googlemapsdistancecalculator.Yue.FriendManager;
+import com.androidtutorialpoint.googlemapsdistancecalculator.Yue.SettingsActivity;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -565,8 +566,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                startActivity(new Intent(this,App.class));
                 return true;
             case R.id.action_settings:
-                startActivity(new Intent(this, Settings.class));
+                SettingsActivity.start(MapsActivity.this);
                 return true;
+
             case R.id.action_about:
                 startActivity(new Intent(this, About.class));
                 return true;
